@@ -1,3 +1,5 @@
+
+# 사용자 u.user 파일을 DataFrame으로 읽기
 import os
 import pandas as pd
 
