@@ -1,13 +1,14 @@
+#깃헙 레포지토리 경로로 이동
 cd /content/drive/MyDrive/RecoSys/real-time-personalized-recommendation-system
 
-
+#자격 인증
 !git config --global user.email 'myeonginjin@gmail.com'
 !git config --global user.name 'myeonginjin'
 
-
+#원격 저장소 동기화
 !git add --all
 !git commit -m " "
 !git push origin main
 
-
-cd 
+#원래 경로로 이동
+cd /content
