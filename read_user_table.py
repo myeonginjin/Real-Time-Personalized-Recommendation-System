@@ -1,0 +1,13 @@
+import os
+import pandas as pd
+
+base_src = 'drive/MyDrive/RecoSys/Data'
+u_user_src = os.path.join(base_src, 'u.user')
+u_cols = ['user_id', 'age', 'sex', 'occupation', 'zip_code']
+users = pd.read_csv(u_user_src,
+                    sep = '|',
+                    names = u_cols,
+                    encoding = 'latin-1'
+                    )
+users = users.set_index('user_id')
+users.head()

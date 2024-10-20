@@ -1,0 +1,10 @@
+cd /content/drive/MyDrive/RecoSys/real-time-personalized-recommendation-system
+
+
+!git config --global user.email 'myeonginjin@gmail.com'
+!git config --global user.name 'myeonginjin'
+
+
+!git add --all
+!git commit -m " "
+!git push origin main
