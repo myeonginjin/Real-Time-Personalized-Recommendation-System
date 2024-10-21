@@ -1,5 +1,9 @@
 # u.data 파일을 DataFrame으로 읽기
 
+import os
+import pandas as pd
+
+base_src = 'drive/MyDrive/RecoSys/Data'
 u_data_src = os.path.join(base_src, 'u.data')
 
 r_cols = ['user_id', 'movie_id', 'rating',
