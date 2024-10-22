@@ -91,11 +91,19 @@ users = users.set_index('user_id')
 # 각 영화(movie_id)와 성별(sex) 그룹에 대한 평점(rating)의 평균을 계산해 g_mean에 저장
 g_mean = merged_ratings[['movie_id', 'sex', 'rating']].groupby(['movie_id', 'sex'])['rating'].mean()
 
+'''
+# g_mean  확인용
+'''
+
 # 영화 평점 매트릭스 생성 (사용자별로 영화에 매긴 평점을 행렬 형태로 변환)
 # 각 사용자를 행으로, 각 영화를 열로 하고, 평점을 값으로 가지는 피벗 테이블 생성
 rating_matrix = x_train.pivot_table(index='user_id',  # 행을 user_id로 설정
                                     columns='movie_id',  # 열을 movie_id로 설정
                                     values='rating')  # 값을 rating으로 설정
+
+'''
+# rating_matrix  확인용
+'''
 
 # 성별 기반 추천 시스템 함수 정의
 def cf_gender(user_id, movie_id):
